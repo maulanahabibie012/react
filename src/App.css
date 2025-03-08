@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.sidebar-container{
+  background:rgb(40, 230, 116);
+  padding: 8px;
+  margin: 4px;
+}
+
+.menu-button {
+  background: rgb(40, 230, 116);
+  border: none
+}
