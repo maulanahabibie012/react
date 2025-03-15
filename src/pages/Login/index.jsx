@@ -31,6 +31,8 @@ export default function Login() {
       .post("https://dummyjson.com/auth/login", payload)
       .then((res) => {
         console.log("data berhasil", res);
+        const token = res.data.accessToken;
+        localStorage.setItem("AccessToken", token);
         setMessage("Berhasil Login");
         setTimeout(() => {
             navigate("/");

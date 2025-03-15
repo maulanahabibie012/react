@@ -2,6 +2,7 @@ import Navbar from "../../Components/Navbar";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
+
 export default function MenuDetail() {
     const { id } = useParams();
     const [menu, setMenu] = useState({});
@@ -19,7 +20,8 @@ export default function MenuDetail() {
     }
     useEffect(() => {
         getMenu();
-    }, [])
+
+    }, []);
     return (
         <div>
             <Navbar/>
